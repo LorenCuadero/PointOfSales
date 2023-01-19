@@ -28,6 +28,7 @@ class User extends Authenticatable {
     public function employees() {
         return $this->hasMany( Employee::class );
     }
+
     // another function call for employee for getting the latest.
 
     public function firstEmployee() {
